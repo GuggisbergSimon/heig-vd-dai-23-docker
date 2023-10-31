@@ -1,3 +1,5 @@
+This image hosts a local file browser accessible on http://localhost:5000 if used with default parameters like below.
+
 To pull the image to docker:
 ```
 docker pull ghcr.io/guggisbergsimon/my-docker:v3.0
@@ -11,7 +13,6 @@ docker:v3.0
 
 To run the container by using docker compose:
 ```
-
 docker compose up -d
 ```
 
