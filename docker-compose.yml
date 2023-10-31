@@ -1,0 +1,15 @@
+services:
+  filebrowser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        FILEBROWSER_VERSION: 2.25.0-r1
+    image: ghcr.io/guggisbergsimon/my-docker:v3.0
+    platform: linux/amd64
+    ports:
+      - "8080:5000"
+    volumes:
+      - /my-data:/app/data
+      - ./my-config:/app/config
+      
